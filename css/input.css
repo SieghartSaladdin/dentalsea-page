@@ -82,8 +82,8 @@ a.active {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 70%;
-    margin-top: 50px;
+    width: 1100px;
+    margin-top: 25px;
     z-index: 1000;
     background-color: white; /* Sesuaikan dengan kebutuhan */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sesuaikan shadow jika diperlukan */
