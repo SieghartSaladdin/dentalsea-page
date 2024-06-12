@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply text-secondary font-primary text-[17px] leading-8;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    @apply text-primary leading-[120%];
+}
+
+.h1 {
+    @apply text-[36px] xl:text-[64px] font-semibold;
+}
+
+.h2 {
+    @apply text-[30px] xl:text-[44px] font-semibold capitalize tracking-[0.44px];
+}
+
+.h3 {
+    @apply text-[20px] xl:text-[26px] font-semibold;
+}
+
+.h4 {
+    @apply text-[20px] xl:text-[26px] font-semibold capitalize;
+}
+
+.btn {
+    @apply rounded-full uppercase tracking-[1.02px] transition-all;
+}
+
+.btn-sm {
+    @apply h-14 px-10;
+}
+
+.btn-lg {
+    @apply h-[66px] px-[50px];
+}
+
+.btn-accent {
+    @apply bg-accent text-white;
+}
+
+.btn-primary {
+    @apply bg-primary text-white hover:bg-primary/90;
+}
+
+.input, .select {
+    @apply w-full rounded-[10px] h-[66px] outline-none border border-[#dbdfdf] text-secondary font-light placeholder:font-light placeholder:text-secondary;
+}
+
+.input {
+    @apply px-4;
+}
+
+.btn-outline {
+    @apply bg-transparent border-2 border-[#d2b48c] text-slate-500 hover:bg-[#d2b48c] hover:border-transparent hover:text-white;
+}
+
+.openNav {
+    @apply left-0;
+}
+
+/* Swiper Bullets */
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    @apply bg-primary;
+}
+
+
+.btn-white {
+    @apply bg-white text-secondary hover:bg-white/90;
+}
+
+a.active {
+    @apply text-accent
+}
+
+#nav-desktop.fixed {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    margin-top: 50px;
+    z-index: 1000;
+    background-color: white; /* Sesuaikan dengan kebutuhan */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sesuaikan shadow jika diperlukan */
+}
